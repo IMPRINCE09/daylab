@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+section{
+    width: 100%;
+    overflow: hidden;
+}
+
+body{
+    font-family: "DM Serif Text", serif;
+}
+
+
+p{
+ 
+    color: rgb(109, 109, 129);
+    font-size: 15px;
+    
+}
+p span{
+    font-size: 22px;
+}
+
+
+.logo{
+    width: 100px;
+
+}
+
+
+/* section aboute */
+
+.home_section{
+    background-image: url("https://img.freepik.com/premium-photo/scientist-working-lab-with-research-equipment_641503-119402.jpg?w=826");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+   
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+
+}
+.new{
+    line-height: 1.6;
+}
+
+.img2{
+    width: 200px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+
+button{
+    font-weight: 500;
+  
+}
+
+.h1{
+    color:white;    
+    font-weight: 700;
+  
+}
+
+.p{
+    color:green;
+}
+
+.btn{
+    background-color:orangered;
+    border: none;
+    padding: 10px;
+    color: white;
+    
+}
+
+.btn:hover{
+    background-color:orange;
+    color: black;
+}
+
+
+
+/* section aboute */
+.section_aboute{
+    width: 100%;
+    height: fit-content;
+    margin: 30px 0px 0px 0px;
+    background-color: rgb(244, 243, 243);
+    padding-bottom: 20px;
+
+    
+}
+.section_all_card{
+    background-image: url('https://img.freepik.com/free-photo/hand-with-protective-gloves-holding-blood-samples-covid-test_23-2148958363.jpg?t=st=1724575765~exp=1724579365~hmac=753c10485d146b432ae9fc83259155c8e8415a65c0ecaf4b41869dfd46a89b80&w=826');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 20px;
+}
+.about_toppara{
+    margin: 20px  ;
+    
+    padding: 20px;
+    
+}
+
+/* .section_aboute div h3{
+    font-weight: 700;
+    text-align: center;
+    padding-top: 10px;
+    color: #020266;
+} */
+.aboute_card{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.card_card{
+     border-radius: 8px;
+     backdrop-filter: blur(20px);
+     height: fit-content;
+     margin: 1px 10px 40px 10px;
+
+     background-color: rgba(255,255,255,0.5);
+     box-shadow: 0 1px 12px rgba(0,0,0,0.25);
+     border: 1px solid rgba(255,255,255,0.3);
+     transition: transform  7s ease-out;
+     
+}
+
+
+.card_card:hover{
+  
+    transform: scale(1.1);
+    cursor: pointer;
+    background: #020266;
+    color: white;
+}
+/* card section animation */
+.card_section_services{
+    margin-top: 25px;
+     transition: transform .5s ease-in-out;
+     box-shadow: 2px 4px 4px 2px rgba(0,0,0,0.25);
+}
+.card_section_services:hover{
+        transform: scale(1.04);
+        border: 2px solid #020266;
+}
+
+
+
+
+
+
+
+
+
+
+.image1{
+    width: 100%;
+    
+}
+
+h3{
+    font-weight: 700;
+    margin-left: 5%;
+    color: #020266;
+    margin-top: 35px;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+}
+h3:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    height: 4px;
+    width: 0;
+    background: rgb(241, 115, 4);
+    border-radius: 50px;
+    /* transform: scaleX(0); */
+    transition: width 0.5s linear;
+  
+
+
+}
+h3:hover:before{
+    width: 40%;
+}
+/* .h12{
+    margin-left: 100px;
+    padding: 20px;
+} */
+
+.box_new{
+    padding: 20px;
+    background-color: whitesmoke;
+    width: 90%;
+    margin-left: 1px;
+   
+}
+
+/* section  services*/
+.card_services{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+/* .card_card:hover{
+    background: #020266;
+    color: white;
+} */
+/* additional_serviecs */
+.additional_services{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+/* mision and vision */
+.mission_vision{
+    margin-top: 40px;
+    background-color: #fffafa;
+   
+}
+.mission_flex_sec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    
+  
+}
+
+
+.mission_image{
+    position: relative;
+     
+}
+.mission_image{
+   border: 2px solid;
+}
+.mission_fixed{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    
+     
+}
+
+
+/* .mission_image:hover + .mission_fixed{
+    display: block;
+    cursor: pointer;
+    
+} */
+
+
+
+/* form */
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: blue;
+    color: white;
+    padding: 12px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgb(131, 131, 227);
+  }
+  
+  .container {  
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+
+  /* loaction map section */
+  
+  .section_map{
+    
+    display: flex;
+    justify-content: center;
+    background-color: #f7f3f3;
+     padding: 0 10px;
+  }
+
+  .section_map iframe{
+    border-radius: 8px;
+    box-shadow: 2px 4px 4px 2px rgba(0,0,0,0.25);
+    
+    margin-bottom: 30px;
+    
+
+  }
+
+  .section_map iframe:hover{
+    border: 2px solid rgb(4, 11, 92);
+    cursor:pointer
+  }
+  .section_contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* footer section */
+
+ .section_navbar{
+    margin-top:35px;
+    background-color: #f1f1f4;
+    line-height: 32px;
+    color: #484747;
+ } 
+.nav_address{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 30px;
+   
+}
+.footer_list ul{
+    display: flex;
+    gap: 16px;
+}
+.items_li{
+    
+    list-style: none;
+    color: #484747;
+
+}
+a{
+    text-decoration: none;
+   
+}
+
+  
+
+
+
+
+@media only screen and (max-width: 1170px) {
+   
+    .mission_vision{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .mission_fixed{
+        display: none;
+        height: 800px;
+    }
+  }
