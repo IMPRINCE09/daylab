@@ -18,8 +18,8 @@ body{
 
 p{
  
-    color: rgb(109, 109, 129);
-    font-size: 15px;
+    color: rgb(70, 70, 74);
+    font-size: 16px;
     
 }
 p span{
@@ -33,7 +33,7 @@ p span{
 }
 
 
-/* section aboute */
+/* section home */
 
 .home_section{
     background-image: url("https://img.freepik.com/premium-photo/scientist-working-lab-with-research-equipment_641503-119402.jpg?w=826");
@@ -50,9 +50,20 @@ p span{
    
 
 }
+
 .new{
-    line-height: 1.6;
+    border-radius: 3px;
+    backdrop-filter: blur(20px);
+    height: 200px;
+    max-width: 1200px;
+    padding: 20px;
+    
+
+    background-color: rgba(255,255,255,0.5);
+    box-shadow: 0 1px 12px rgba(116, 115, 115, 0.25);
+    border: 1px solid rgba(255,255,255,0.3);
 }
+
 
 .img2{
     width: 200px;
@@ -66,15 +77,9 @@ button{
   
 }
 
-.h1{
-    color:white;    
-    font-weight: 700;
-  
-}
 
-.p{
-    color:green;
-}
+
+
 
 .btn{
     background-color:orangered;
@@ -108,12 +113,16 @@ button{
     background-position: center;
     background-attachment: fixed;
     padding-top: 20px;
+    padding-bottom: 24px;
 }
 .about_toppara{
-    margin: 20px  ;
+    margin: 20px 20px 20px 20px ;
     
     padding: 20px;
     
+}
+.about_toppara:hover{
+    border: 2px solid #020266;
 }
 
 /* .section_aboute div h3{
@@ -138,17 +147,17 @@ button{
      background-color: rgba(255,255,255,0.5);
      box-shadow: 0 1px 12px rgba(0,0,0,0.25);
      border: 1px solid rgba(255,255,255,0.3);
-     transition: transform  7s ease-out;
+     transition: transform  .5 ease-out;
      
 }
 
 
 .card_card:hover{
   
-    transform: scale(1.1);
+    transform: scale(1.01);
     cursor: pointer;
-    background: #020266;
-    color: white;
+  
+    
 }
 /* card section animation */
 .card_section_services{
@@ -160,13 +169,6 @@ button{
         transform: scale(1.04);
         border: 2px solid #020266;
 }
-
-
-
-
-
-
-
 
 
 
@@ -227,13 +229,65 @@ h3:hover:before{
     background: #020266;
     color: white;
 } */
+
+
 /* additional_serviecs */
 .additional_services{
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-   
+    margin-top: 30px;
+    
+    width: 100%;
+   position: relative;
 }
+.sec_serve_card{
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+
+}
+.add_serve{
+    
+    display: flex;
+   
+    
+}
+.add_one{
+     position: relative;
+     max-width: 310px;
+     max-height: 350px;
+     top: 40px;
+     left: -12%;
+     transition: transform .5s ease-in-out;
+}
+
+.add_one:hover{
+    border: 2px solid #020266;
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+.add_two{
+ position: relative;
+ max-width: 380px;
+ max-height: 450px;
+ left: 0%;
+ transition: transform .5s ease-in;
+}
+.add_two:hover{
+    border: 2px solid #020266;
+    transform: scale(1.1);
+    cursor: pointer;
+    
+}
+.service_content{
+  display: flex ;
+  justify-content: center;
+  width: 400px;
+  
+
+
+}
+
 
 /* mision and vision */
 .mission_vision{
