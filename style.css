@@ -78,7 +78,7 @@ li a:hover:before{
 /* section home */
 
 .home_section{
-  
+   
     background-image: url("https://img.freepik.com/premium-photo/scientist-working-lab-with-research-equipment_641503-119402.jpg?w=826");
     background-repeat: no-repeat;
     background-position: center;
@@ -86,10 +86,16 @@ li a:hover:before{
     backdrop-filter: blur(20px);
     width: 100%;  
     height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
     width: 100%;
+}
+.home_text_div{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding:10px
+
 }
 
 .new{
@@ -98,8 +104,6 @@ li a:hover:before{
     height: 200px;
     max-width: 1200px;
     padding: 20px;
-    
-
     background-color: rgba(255,255,255,0.5);
     box-shadow: 0 1px 12px rgba(116, 115, 115, 0.25);
     border: 1px solid rgba(255,255,255,0.3);
