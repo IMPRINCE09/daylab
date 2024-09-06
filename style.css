@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 *{
     padding: 0px;
     margin: 0px;
@@ -31,6 +32,16 @@ p span{
     width: 100px;
 
 }
+.text_logo{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 900;
+    font-size: 29px;
+    text-transform: uppercase;
+    color: rgb(6, 101, 209);
+}
+.text_logo span{
+    color: #020266;
+}
 .logo_footer{
     width: 140px;
 }
@@ -60,7 +71,7 @@ li
 
 }
 li a:hover:before{
-    width: 90%;
+    width: 60px;
    
 }
 
@@ -79,23 +90,30 @@ li a:hover:before{
 
 .home_section{
    
-    background-image: url("https://img.freepik.com/premium-photo/scientist-working-lab-with-research-equipment_641503-119402.jpg?w=826");
+    /* background-image: url("./assets/images/front/Home_page.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px); */
     width: 100%;  
     height: 90vh;
     position: relative;
     width: 100%;
+   
+}
+.home_section div img{
+    width: 100%;
+    
 }
 .home_text_div{
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    background-color: rgba(0, 0, 0, 0.2);
-    padding:10px
-
+    
+    bottom: 0;
+    left: 5%;
+    background-color: rgba(4, 2, 105, 0.909);
+    padding:15px;
+    max-width: 345px;
+    height: 140px;
 }
 
 .new{
@@ -216,7 +234,7 @@ button{
 .section_aboute{
     width: 100%;
     height: fit-content;
-    margin: 30px 0px 0px 0px;
+    margin-top: 10px;
     background-color: rgb(244, 243, 243);
     padding-bottom: 20px;
 
@@ -355,9 +373,17 @@ h3:hover:before{
    position: relative;
    background-color: #f4e8f9;
 }
+.additional_sevr_images{
+    background-image: url("./assets/images/features/molecular_add.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
 .service_content{
     background-color: rgba(255,255,255,0.5);
     border: 1px solid rgba(255,255,255,0.3);
+
 
 }
 .sec_serve_card{
@@ -367,9 +393,10 @@ h3:hover:before{
      flex-wrap: wrap;
 
 }
+
 .add_serve{
     
-    display: flex;
+ display: flex;
    
     
 }
@@ -559,6 +586,13 @@ a{
         width: 16rem;
 
     }
+    .text_logo{
+        display: none;
+
+    }
+    .home_section{
+        height: 38vh;
+    }
 }
 
   
@@ -577,4 +611,31 @@ a{
         display: none;
         height: 800px;
     }
+  }
+
+
+
+  /* about _ page */
+  .text_about_page{
+    position: absolute;
+    
+    top: 30%;
+    left: 22%;
+    background-color: rgba(4, 2, 105, 0.909);
+    padding:10px;
+    width: 55%;
+    height: 200px;
+   
+  }
+  
+  @media only screen and (max-width:580px) {
+    .text_about_page{
+        bottom: 1%;
+        left: 5%;
+        width: 90%;
+        padding:5px;
+        z-index: 999px;
+       
+    }
+    
   }
