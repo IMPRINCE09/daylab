@@ -7,6 +7,7 @@
 
 }
 
+
 section{
     width: 100%;
     overflow: hidden;
@@ -45,6 +46,7 @@ p span{
 .logo_footer{
     width: 140px;
 }
+
 
 li a{
     font-weight: 700;
@@ -639,3 +641,63 @@ a{
     }
     
   }
+
+
+
+   /* socials_tags */
+ .socials_tags_one{
+    color: white;
+  }
+
+  .socials_tags_one:hover{
+    color: white;
+  }
+
+   /* socials_tags */
+ .socials_tags_two{
+    color: white;
+    
+    
+  } /* socials_tags */
+ .socials_tags_two:hover{
+    color: white;
+    
+    
+  } 
+  /* socials_tags */
+  .socials_tags_three{
+     color: white;
+     
+     
+   } /* socials_tags */
+  .socials_tags_three:hover{
+     color: white;
+     
+     
+   } /* socials_tags */
+   .socials_tags_four{
+      color: white;
+      
+      
+    }
+   .socials_tags_four:hover{
+      color: white;
+      
+      
+    }
+
+     /* socials_tags */
+ .socials_tags_five{
+    color: white;
+    
+    
+  }
+ .socials_tags_five:hover{
+    color: white;
+    
+    
+  }
+
+  
+  
+ 
