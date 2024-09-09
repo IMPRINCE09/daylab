@@ -385,6 +385,7 @@ h3:hover:before{
 .service_content{
     background-color: rgba(255,255,255,0.5);
     border: 1px solid rgba(255,255,255,0.3);
+   
 
 
 }
@@ -567,7 +568,10 @@ input[type=text], select, textarea {
 }
 .footer_list ul{
     display: flex;
-    gap: 16px;
+    gap: 8px;
+    justify-content: center;
+    margin-left: 0px;
+    
 }
 .items_li{
     
@@ -595,6 +599,13 @@ a{
     .home_section{
         height: 38vh;
     }
+    .items_li{
+    
+        
+        font-size: 16px;
+    
+    }
+    
 }
 
   
@@ -607,12 +618,11 @@ a{
     .mission_vision{
         display: flex;
         justify-content: center;
-        
+         
+        margin: 5px;
+        overflow: hidden;
     }
-    .mission_fixed{
-        display: none;
-        height: 800px;
-    }
+  
   }
 
 
@@ -629,6 +639,9 @@ a{
     height: 200px;
    
   }
+  .para_one{
+    margin-top: 35px;
+  }
   
   @media only screen and (max-width:580px) {
     .text_about_page{
@@ -637,8 +650,18 @@ a{
         width: 90%;
         padding:5px;
         z-index: 999px;
+        
        
     }
+    .para_one{
+       margin-top: 5px;
+      
+    }
+    .special_tags_det{
+      display: none;
+
+    }
+   
     
   }
 
@@ -646,57 +669,83 @@ a{
 
    /* socials_tags */
  .socials_tags_one{
-    color: white;
+    color: rgb(0, 115, 255);
   }
 
   .socials_tags_one:hover{
-    color: white;
+    color: rgb(0, 115, 255);
   }
 
    /* socials_tags */
  .socials_tags_two{
-    color: white;
+    color: rgb(255, 17, 0);
     
     
   } /* socials_tags */
  .socials_tags_two:hover{
-    color: white;
+    color: rgb(255, 17, 0);
     
     
   } 
   /* socials_tags */
   .socials_tags_three{
-     color: white;
+    color: rgb(0, 115, 255);
      
      
    } /* socials_tags */
   .socials_tags_three:hover{
-     color: white;
+    color: rgb(0, 115, 255);
      
      
    } /* socials_tags */
    .socials_tags_four{
-      color: white;
+      color: rgb(21, 255, 0);
       
       
     }
    .socials_tags_four:hover{
-      color: white;
+    color: rgb(21, 255, 0);
       
       
     }
 
      /* socials_tags */
  .socials_tags_five{
-    color: white;
+    color: rgb(0, 115, 255);
     
     
   }
  .socials_tags_five:hover{
-    color: white;
+    color: rgb(0, 115, 255);
     
     
   }
+
+  /* loader  */
+  #loader {
+    border: 12px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 12px solid #444444;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+}
+
+.center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+ 
 
   
   

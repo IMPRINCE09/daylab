@@ -14,6 +14,11 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/logo/Daymens logo.png"
+    />
     <title>Daymen's Lab</title>
   </head>
   <body>
@@ -28,9 +33,10 @@
           </h6>
         </div>
         <div class="d-flex gap-3 align-items-center" style="margin-right: 20px">
-          <div>
+          <div class="special_tags_det">
             <a
               class="socials_tags_one"
+              style="color: white"
               href="https://www.facebook.com/profile.php?id=61560019645151"
               target="_blank"
             >
@@ -38,37 +44,41 @@
             ></a>
           </div>
 
-          <div>
+          <div class="special_tags_det">
             <a
               class="socials_tags_two"
               href="https://www.instagram.com/dayashwati042024/?next=%2F"
               target="_blank"
+              style="color: white"
             >
               <i class="fa-brands fa-square-instagram"></i
             ></a>
           </div>
-          <div>
+          <div class="special_tags_det">
             <a
               class="socials_tags_three"
               href="mailto: dayashwatilab202404@gmail.com"
+              style="color: white"
             >
               <i class="fa-solid fa-envelope"></i
             ></a>
           </div>
 
-          <div>
+          <div class="special_tags_det">
             <a
               class="socials_tags_four"
               href="https://wa.me/7302473574"
               target="_blank"
+              style="color: white"
               ><i class="fa-brands fa-square-whatsapp"></i
             ></a>
           </div>
-          <div>
+          <div class="special_tags_det">
             <a
               class="socials_tags_five"
               href="https://www.linkedin.com/in/daymen-s-laboratory-a25537326/"
               target="_blank"
+              style="color: white"
               ><i class="fa-brands fa-linkedin"></i
             ></a>
           </div>
@@ -111,7 +121,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#Mission">Mission</a>
+                <a class="nav-link" href="./Description.html">Description</a>
               </li>
 
               <li class="nav-item">
@@ -133,18 +143,15 @@
           <img src="./assets/images/front/Home_page.png" alt="HomePage" />
         </div>
         <div class="text_about_page">
-          <p class="" style="color: white; font-size: 26px">
-            <!-- Daymen's Laboratory -->
-          </p>
           <p
-            class=" "
+            class="para_one"
             style="
               color: white;
               text-align: center;
               font-size: 30px;
               padding: 10px;
               border: dashed;
-              margin-top: 40px;
+
               text-transform: uppercase;
               margin-bottom: 20px;
             "
@@ -279,6 +286,12 @@
         </div>
       </div>
     </section>
+
+    <!-- laoder section
+      -->
+    <section>
+      <div id="loader" class="center"></div>
+    </section>
     <section class="section_footer">
       <div class="nav_address">
         <div>
@@ -321,7 +334,7 @@
         <div class="footer_list">
           <ul>
             <li class="items_li"><a href="./index.html">Home</a></li>
-            <li class="items_li"><a href="./About.html">Aboute</a></li>
+            <li class="items_li"><a href="./About.html">About</a></li>
             <li class="items_li">
               <a href="./Description.html">Description</a>
             </li>
@@ -329,6 +342,52 @@
 
             <li class="items_li"><a href="./Contact.html">Contact</a></li>
           </ul>
+          <div class="d-flex gap-4 align-items-center">
+            <div class="ms-auto">
+              <a
+                class="socials_tags_one"
+                href="https://www.facebook.com/profile.php?id=61560019645151"
+                target="_blank"
+              >
+                <i class="fa-brands fa-square-facebook fa-2x"></i
+              ></a>
+            </div>
+
+            <div>
+              <a
+                class="socials_tags_two"
+                href="https://www.instagram.com/dayashwati042024/?next=%2F"
+                target="_blank"
+              >
+                <i class="fa-brands fa-square-instagram fa-2x"></i
+              ></a>
+            </div>
+            <div>
+              <a
+                class="socials_tags_three"
+                href="mailto: dayashwatilab202404@gmail.com"
+              >
+                <i class="fa-solid fa-envelope fa-2x"></i
+              ></a>
+            </div>
+
+            <div>
+              <a
+                class="socials_tags_four"
+                href="https://wa.me/7302473574"
+                target="_blank"
+                ><i class="fa-brands fa-square-whatsapp fa-2x"></i
+              ></a>
+            </div>
+            <div>
+              <a
+                class="socials_tags_five"
+                href="https://www.linkedin.com/in/daymen-s-laboratory-a25537326/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin fa-2x"></i
+              ></a>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -349,5 +408,16 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.onreadystatechange = function () {
+        if (document.readyState !== "complete") {
+          document.querySelector("body").style.visibility = "hidden";
+          document.querySelector("#loader").style.visibility = "visible";
+        } else {
+          document.querySelector("#loader").style.display = "none";
+          document.querySelector("body").style.visibility = "visible";
+        }
+      };
+    </script>
   </body>
 </html>
