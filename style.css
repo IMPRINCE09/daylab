@@ -650,13 +650,16 @@ a{
         width: 90%;
         padding:5px;
         z-index: 999px;
-        
+        height: fit-content;
        
     }
+    
     .para_one{
        margin-top: 5px;
       
+      
     }
+  
     .special_tags_det{
       display: none;
 
