@@ -20,6 +20,15 @@
     ></script>
     <link rel="stylesheet" href="./style.css" />
     <title>Daymen's Lab</title>
+    <link rel="stylesheet" href="./contact.js" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      emailjs.init("41Os1MF3nR5fMBDtj");
+    </script>
   </head>
   <body>
     <section>
@@ -208,11 +217,11 @@
       <div class="container section_contact">
         <div class="card" style="width: 400px; padding: 10px 15px 0px">
           <form class="">
-            <label for="fname">Name</label>
+            <label for="first_name">Name</label>
             <input
               type="text"
-              id="fname"
-              name="name"
+              id="first_name"
+              name="first_name"
               placeholder="Your name.."
             />
 
@@ -223,11 +232,11 @@
               name="Email"
               placeholder="Your Email.."
             />
-            <label for="lname">Contact No.</label>
+            <label for="phone_number">Contact No.</label>
             <input
               type="text"
-              id="lname"
-              name="lastname"
+              id="phone_number"
+              name="phone_number"
               placeholder="Your contact.."
             />
 
@@ -238,11 +247,11 @@
               name="lastname"
               placeholder="Country.."
             />
-            <label for="lname">Message</label>
+            <label for="message">Message</label>
             <input
               type="text"
-              id="lname"
-              name="lastname"
+              id="message"
+              name="message"
               placeholder="Message.."
             />
 
@@ -252,13 +261,14 @@
               hesitate to get in touch.
             </p>
 
-            <input type="submit" value="Send massage " />
+            <!-- <input type="submit" value="Send massage " onclick="sendMail()" /> -->
+            <button class="btn" onclick="sendMail()">submit</button>
           </form>
         </div>
 
         <div class="section_map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.4941193986333!2d72.49892347350973!3d23.07900101422349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9cc0b90151e1%3A0x9e601a850ba19348!2sFortune%20Business%20Hub!5e0!3m2!1sen!2sin!4v1724600481012!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3501.900245974411!2d77.6412183755008!3d28.63275167566471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDM3JzU3LjkiTiA3N8KwMzgnMzcuNyJF!5e0!3m2!1sen!2sin!4v1727066379061!5m2!1sen!2sin"
             width="390"
             height="550"
             allowfullscreen=""
@@ -382,7 +392,6 @@
             Disclaimer | Privacy Policy | Terms of Services
           </p>
         </div>
-        <div></div>
       </div>
     </section>
 
