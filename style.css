@@ -18,6 +18,28 @@ body{
 }
 
 
+/* Annoucement Section */
+.text_float_sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.textLefttoRight{
+    animation: RightToLeft 24s infinite linear;
+
+}
+
+@keyframes RightToLeft {
+    from{
+       transform: translateX(150%);
+    }
+    to{
+        transform: translateX(-150%);
+    }
+}
+
+
 p{
  
     color: rgb(70, 70, 74);
@@ -86,6 +108,8 @@ li a:hover:before{
     justify-content: center;
 
 }
+
+
 
 
 
